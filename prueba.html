@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+ 
+	<script>
+	function info()
+	{
+		var resultado="Esta seleccionado el input...";
+		if(document.activeElement.name)
+			resultado+="<br>con nombre: <b>"+document.activeElement.name+"</b>";
+		if(document.activeElement.type)
+			resultado+="<br>del tipo: <b>"+document.activeElement.type+"</b>";
+		document.getElementById("resultado").innerHTML=resultado;
+	}
+	</script>
+ 
+	<style>
+	.error {display:none;}
+	</style>
+</head>
+ 
+<body>
+ 
+<form>
+	Introduce un nombre
+	<input type="text" name="IntNombre" onfocus="info();">
+	<div id="eIntNombre" class="error"></div>
+ 
+	<br>Introduce tu apellido
+	<input type="text" name="apellido" onfocus="info();">
+ 
+	<p><input type="button" id="miBoton" value="Botón" onfocus="info();"></p>
+ 
+	<div id="resultado"></div>
+</form>
+ 
+</body>
+</html>

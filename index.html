@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>The Pointe Restaurant</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Roboto" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/app.css">
+
+	<style>
+		body {
+			color: #4a4a4a;
+		    font-weight: 400;
+		    background-color: #fff;
+		    font-family: 'Crimson Text', serif;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<nav class="header-nav">
+			<a href="#">dining</a>
+			<a href="#">wine cellar</a>
+			<a href="#">on the rocks bar</a>
+			<a href="#">events</a>
+			<a href="#">menus</a>
+			<a href="#">contact</a>
+		</nav>
+		<div class="header-banner">
+			<img clas="logo" src="images/logo-header-transparent.png" alt="">
+		</div>
+		<div class="header-creditos">
+			<p>Wickaninnish Inn, 500 Osprey Lane, Tofino, BC, V0R 2Z0 Canada</p>
+			<p>For reservations please call 250-725-3106</p>
+		</div>
+	</header>
+
+	<main class="main">
+		<h2 class="main__title icon-horizontal-line">the complete experience</h2>
+		<p class="main__textwelcome">Welcome to The Pointe Restaurant, an aspirational fine dining experience on the cusp of Canada’s wild west coast. With a sweeping 240-degree view of the lively Pacific Ocean, innovative Canadian cuisine and refined service, at The Pointe we invite you to a taste of all the best things our coast has to offer. Whether you’re celebrating a special weekend or a relaxed gathering with friends, our personable attention to detail will make your visit unique and memorable.</p>
+
+		<section class="services contenedor">
+			<div class="column imagen">
+				<img src="images/17_21_039_crop.800x596.jpg" alt="">
+			</div>
+			<div class="column description">
+				<h2 class="mb-1">LET US NOURISH YOU</h2>
+				<p>Our sophisticated menus feature inventive contemporary dishes inspired by fresh, local and seasonal fare. With a unique approach to gastronomy complemented by an extensive wine selection and a spectacular vista, The Pointe indulges all of the senses.</p>
+			</div>
+
+			<div class="icon-vertical-divider"></div>
+			
+			<div class="column description">
+				<h2 class="mb-1">RAISE A GLASS</h2>
+				<p>Featuring both Canadian winemakers and international vineyards, Howard's Wine Cellar is an unparalleled opportunity for wine lovers and wine scholars alike. This exceptional venue is available for intimate dining experiences and small groups by special arrangement.</p>
+			</div>
+			<div class="column imagen">
+				<img src="images/table_with_a_view_ivan_hunter_2009.800x596.jpg" alt="">
+			</div>
+
+			<div class="icon-vertical-divider"></div>
+			
+			<div class="column imagen">
+				<img src="images/patio_feather_george_kyler_vos-2.800x596.jpg" alt="">
+			</div>
+			<div class="column description">
+				<h2 class="mb-1">RELAX AND UNWIND</h2>
+				<p>Enjoy a classic cocktail, a cheeky pint or flight of scotches at our On the Rocks Bar. Here we feature an excellent selection of Pacific Northwest wines, a quality range of classic ports and one of B.C.'s largest selection of single-malt scotches.</p>
+			</div>
+		</section>
+
+		<section class="chef">
+			<blockquote>
+				<p>We let the seasons dictate how we write our menus. We change them four times a year, and we have a new tasting menu weekly, which allows us to utilize those fantastic products that come and go within weeks.</p>
+				<cite>Chef Warren Barr</cite>
+			</blockquote>
+		</section>
+
+		<section class="featured">
+			<div class="featured-imagen">
+				<img src="images/checkmate_vineyard_web.821x547.jpg" alt="">
+				<div class="featured-imagen-date">
+					<span class="featured-imagen-date__day">1</span>
+					<span class="featured-imagen-date__month">june</span>
+					<span class="featured-imagen-date__year">2018</span>
+				</div>
+			</div>
+
+			<div class="featured-event">
+				<div class="featured-event-description">
+					<h2>FEATURED EVENT</h2>
+					<h3>Intimate Winemaker's Dinner with Checkmate Artisanal Winery in the Shoreline Terrace</h3>
+					<p>Experience the Inn's brand new Shoreline Terrace with this intimate five course dinner featuring Checkmate Artisanal Winery. Your</p>
+					<a href="#">see details</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+
+		<section class="footer-newsletter">
+			<h2 class="footer-newsletter__title">Subscribe to our Newsletter</h2>
+			<form class="footer-newsletter__form">
+		        <input id="fieldEmail" name="cm-etukjh-etukjh" type="email" placeholder="Enter your Email Address">
+		    </form>
+		</section>
+
+		<section class="footer-links">
+			<ul class="footer-links__icons">
+				<li><a href="tel:+1-250-725-3106" target="_blank"><i class="fa fa-2x fa-phone-square"></i><i>250.725.3106</i></a></li>
+				<li><a href="https://www.instagram.com/wickinnbc/" target="_blank"><i class="fa fa-2x fa-instagram"></i><i>@wickinnbc</i></a></li>
+				<li><a href="https://twitter.com/tastewickinnbc" target="_blank"><i class="fa fa-2x fa-twitter"></i><i>@TasteWickInnBC</i></a></li>
+			</ul>
+			<ul class="footer-links__pages">
+				<li><a href="#" target="_blank">Contact</a></li>
+				<li><a href="#" target="_blank">Reservations Agreement</a></li>
+				<li><a href="#" target="_blank">Menus</a></li>
+			</ul>
+		</section>
+	</footer>
+
+	<script>
+		let input = document.querySelector('#fieldEmail');
+		console.log(input)
+		input.addEventListener('focus', () => {
+			input.setAttribute('placeholder', '');
+			input.addClass = "fade";
+		})
+		input.addEventListener('blur', () => {
+			input.setAttribute('placeholder', 'Enter your Email Address');
+		})
+	</script>
+</body>
+</html>
